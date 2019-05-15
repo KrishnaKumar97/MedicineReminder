@@ -13,7 +13,7 @@
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:expanded="false"
-        app:layout_behavior="com.gautam.medicinetime.utils.ScrollingCalendarBehavior">
+        app:layout_behavior="com.medicine.medicinetime.utils.ScrollingCalendarBehavior">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbarLayout"
@@ -22,9 +22,9 @@
             android:fitsSystemWindows="true"
             android:minHeight="?attr/actionBarSize"
             app:contentScrim="?attr/colorPrimary"
-            app:titleEnabled="false"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:statusBarScrim="?attr/colorPrimaryDark">
+            app:statusBarScrim="?attr/colorPrimaryDark"
+            app:titleEnabled="false">
 
             <LinearLayout
                 android:id="@+id/compactcalendar_view_container"
@@ -40,9 +40,9 @@
                     android:layout_height="match_parent"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    app:compactCalendarBackgroundColor="?attr/colorPrimary"
-                    app:compactCalendarCurrentDayBackgroundColor="#FFC107"
-                    app:compactCalendarCurrentSelectedDayBackgroundColor="#BBDEFB"
+                    app:compactCalendarBackgroundColor="#9e9e9e"
+                    app:compactCalendarCurrentDayBackgroundColor="#ff9800"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="#ffcc80"
                     app:compactCalendarTextColor="#fff"
                     app:compactCalendarTextSize="12sp" />
             </LinearLayout>
@@ -60,9 +60,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:background="?android:selectableItemBackground"
-                    android:gravity="center_vertical"
                     android:clickable="true"
                     android:focusable="true"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView
@@ -71,15 +71,16 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:maxLines="1"
-                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
                         android:textSize="18sp"
-                        android:textColor="@android:color/white" />
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/date_picker_arrow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@id/date_picker_text_view"
+                        android:layout_marginBottom="0dp"
                         android:layout_toRightOf="@id/date_picker_text_view"
                         app:srcCompat="@drawable/ic_arrow_drop_down"
                         tools:ignore="ContentDescription,RtlHardcoded" />

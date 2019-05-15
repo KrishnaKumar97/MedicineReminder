@@ -1,12 +1,12 @@
-package com.gautam.medicinetime.data;
+package com.medicine.medicinetime.data;
 
 
 import android.support.annotation.VisibleForTesting;
 
-import com.gautam.medicinetime.data.source.History;
-import com.gautam.medicinetime.data.source.MedicineAlarm;
-import com.gautam.medicinetime.data.source.MedicineDataSource;
-import com.gautam.medicinetime.data.source.Pills;
+import com.medicine.medicinetime.data.source.History;
+import com.medicine.medicinetime.data.source.MedicineAlarm;
+import com.medicine.medicinetime.data.source.MedicineDataSource;
+import com.medicine.medicinetime.data.source.Pills;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import java.util.Map;
 
 
 /**
- * Created by gautam on 13/05/17.
+ * Created by medicine on 13/05/17.
  */
 
 public class FakeMedicineLocalDataSource implements MedicineDataSource {
